@@ -29,7 +29,6 @@ settings: // object with settings for different boxes
 concurency: 100   // number of pipeline processed in parallel
 generate: 'tick'  // name of used generator
 process: [  // box pipeline, boxes on one line are processed in parallel, lines are processed as waterfall
-
     [ 'downloadBitfinex', 'grabTweetSearch', 'grabWeatherForecast' ]
     [ 'analyzeBitcoinVsWeather', 'analyzeBitcoinVsTweets' ]
     [ 'decideOrder', 'saveToMongoDB' ]
